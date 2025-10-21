@@ -44,7 +44,7 @@ function resetAutoSlide() {
 
 // Função para iniciar auto-slide
 function startAutoSlide() {
-    autoSlideInterval = setInterval(nextSlide, 8500);
+    autoSlideInterval = setInterval(nextSlide, 85000);
 }
 
 // Função para parar auto-slide
