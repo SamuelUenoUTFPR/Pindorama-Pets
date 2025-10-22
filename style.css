@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +18,6 @@ body {
 .container {
   max-width: 1130px;
   margin: 0 auto;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -262,11 +260,30 @@ body {
   pointer-events: none; 
 }
 
+.slide-vacinacao h3{
+  position: fixed;
+  left: 15%;
+  top: 10%;
+}
+
+.slide-vacinacao p {
+  position: fixed;
+  left: 15.3%;
+  top: 25%;
+}
+
 .slide-vacinacao .gato-sombra {
   position: absolute;
   top: 100px;
   right: 100px;
   pointer-events: none; 
+}
+
+.slide-vacinacao .btn-slide {
+  position: fixed;
+  left: 15.3%;
+  top: 55%;
+  padding: 10px;
 }
 
 .slide-adocao .gato-espiando {
@@ -287,6 +304,25 @@ body {
   top: 0px;
   right: -75px;
   z-index: 0;
+}
+
+.slide-adocao h3{
+  position: fixed;
+  right: 54.2%;
+  top: 8%
+}
+
+.slide-adocao p{
+  position: fixed;
+  right: 47.1%;
+  top: 25%;
+}
+
+.slide-adocao .btn-slide {
+  position: fixed;
+  left: 36.3%;
+  top: 70%;
+  padding: 10px;
 }
 
 .slide-banho p{
@@ -320,6 +356,25 @@ body {
   position: absolute;
   top: 0px;
   right: 800px;
+}
+
+.slide-banho h3{
+  position: fixed;
+  right: 11.1%;
+  top: 11%
+}
+
+.slide-banho p{
+  position: fixed;
+  right: 13.3%;
+  top: 25%;
+}
+
+.slide-banho .btn-slide {
+  position: fixed;
+  left: 69.6%;
+  top: 70%;
+  padding: 10px;
 }
 
 .decoration {
