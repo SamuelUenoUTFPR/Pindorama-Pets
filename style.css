@@ -183,6 +183,165 @@
   pointer-events: none; /* não atrapalha cliques no conteúdo */
 }
 
+/*-------------------------------------------------------------*/
+
+.terceira {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: auto;
+  background-color: #e2f5fa;
+  padding-top: 20px;
+}
+
+.Avaliacoes {
+  display: flex;
+  width: 1180px;
+  height: 626px;
+  flex-direction: column;
+  padding-left: 120px;
+  gap: 20px;
+  
+}
+
+.Avaliacoes h4 {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: clamp(20px, 5vw, 26px);
+  color: #063643;
+}
+
+.comentarios {
+  display: none;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 43px;
+  gap: 15px;
+  padding-bottom: 30px;
+}
+
+.comentarios.visible {
+  display: flex; /* Torna a avaliação visível */
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.coluna h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(20px, 5vw, 20px);
+}
+
+.coluna p {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(18px, 5vw, 18px);
+}
+
+.fotos-de-perfil {
+  padding-top: 10px;
+}
+
+.fotos-de-perfil img {
+  width: 8vw;
+  height: 12vh;
+  border: 1px;
+}
+
+#estrela img {
+  width: 8vw;
+  height: 2.5vh;
+}
+
+#A {
+  display: flex;
+  height: 89px;
+  width: 850px;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.linha img {
+  width: 55vw;
+}
+
+.carrosel {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+#troca1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #063643;
+  border-radius: 8px;
+}
+
+.trocar img {
+  width: 0.9vw;
+  height: 1vh;
+}
+
+.numeracao {
+  display: flex;
+  align-items: center;
+  margin-left: 900px;
+  padding-right: 15px;
+  color: #063643;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 18px);
+  font-family: "Poppins", sans-serif;
+}
+
+#numeracao2 {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #063643;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 18px);
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+#voltar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #063643;
+  border-radius: 8px;
+  margin-left: 850px;
+}
+
+#voltar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #063643;
+  border-radius: 8px;
+  margin-left: 850px;
+}
+
 @media (max-width: 768px) {
   .cuidados {
     display: none;
@@ -216,9 +375,9 @@
   .quem-somos-texto-mobile::before {
     content: "";
     position: absolute;
-    inset: 0; 
+    inset: 0;
     background-image: url("img/fundo-animais-icons 3.png");
-    pointer-events: none; 
+    pointer-events: none;
   }
 
   .quem-somos-texto-mobile h3 {
@@ -272,9 +431,9 @@
   .nossos-servicos-mobile::before {
     content: "";
     position: absolute;
-    inset: 0; 
+    inset: 0;
     background-image: url("img/fundo-animais-icons 3.png");
-    pointer-events: none; 
+    pointer-events: none;
   }
 
   .nossos-servicos-mobile h3 {
@@ -325,7 +484,6 @@
 
   .nossos-servicos-mobile img {
     position: relative;
-     margin-left: 45%;
-     
+    margin-left: 45%;
   }
 }
