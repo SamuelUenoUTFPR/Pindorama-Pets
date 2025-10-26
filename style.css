@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+body {
+  background-color: #e2f5fa;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
 .sobre-nos {
   display: flex;
   flex-flow: column wrap;
@@ -15,7 +23,7 @@
   justify-content: center;
   gap: 80px;
   height: 300px;
-  width: 100%;
+  width: 100vw;
 }
 .quem-somos::before {
   content: "";
@@ -188,9 +196,8 @@
 .terceira {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   width: auto;
-  background-color: #e2f5fa;
   padding-top: 20px;
 }
 
@@ -201,7 +208,6 @@
   flex-direction: column;
   padding-left: 120px;
   gap: 20px;
-  
 }
 
 .Avaliacoes h4 {
@@ -279,8 +285,6 @@
   flex-direction: row;
 }
 
-
-
 #troca1 {
   display: flex;
   justify-content: center;
@@ -318,8 +322,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
 #voltar2 {
   display: flex;
   justify-content: center;
@@ -341,6 +343,178 @@
   border-radius: 8px;
   margin-left: 850px;
 }
+
+/*==============================*/
+
+.entre-em-contato {
+  width: 1020px;
+  height: 745px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entre-em-contato h5 {
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 26px);
+  padding-bottom: 24px;
+  color: #063643;
+  font-family: "Inter", sans-serif;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+}
+
+.localizacao {
+  background-color: #f8f8ff;
+  width: 420px;
+  height: 692px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.localizacao h6 {
+  color: #063643;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(20px, 5vw, 22px);
+  padding: 51px 282px 40px 21px;
+}
+
+.localizacao p {
+  color: #063643;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(20px, 5vw, 22px);
+  padding-left: 20px;
+  padding-bottom: 70px;
+}
+
+.localizacao img {
+  width: 18vw;
+  height: 23vh;
+  border-radius: 4px;
+  border-color: #0f637a66;
+  border: 1px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 46px;
+}
+
+.whatsapp {
+  padding-bottom: 12px;
+  height: 35px;
+}
+
+.icones-juntos {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.icones-juntos img{
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-icon img{
+  position: absolute;
+  z-index: 2;
+  width: 1.3vw;
+  height: 2.5vh;
+  top: 6px; 
+  left: 6px;
+  
+}
+
+.Facebook-icon{
+  position: absolute;
+  z-index: 2;
+  width: 1.3vw;
+  height: 2.5vh;
+  top: 6px; 
+  left: 6px;
+}
+
+.eclipse img{
+  position: absolute;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+}
+
+.whatsapp p{
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+  padding-left: 78px;
+  padding-top: 3px;
+}
+
+
+.cliente {
+  background-color: #fafdff;
+  width: 600px;
+  height: 692px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+  
+.nome{
+  padding-top: 51px;
+}
+
+.cliente h3 {
+  font-size: clamp(20px, 5vw, 22px);
+  color: #063643;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.caixa-de-texto{
+  width: 520px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #00000066;  
+}
+
+.caixa-de-texto2{
+  width: 520px;
+  height: 120px;
+  border-radius: 8px;
+  border: 1px solid #00000066;  
+}
+
+.sobrenome{
+  padding-top: 28px;
+}
+
+.enviar p{
+  max-width: 144px;
+  height: 55px;
+  background-color: #0F637A;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: clamp(20px, 5vw, 22px);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
+.enviar :hover{
+  background-color: #063643;
+    color: white;
+    cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
   .cuidados {
@@ -423,7 +597,7 @@
     background-color: #63b3c9;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100vw;
     min-height: 330px;
     position: relative;
   }
