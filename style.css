@@ -26,7 +26,7 @@ body {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   left: 58%;
   top: 1.5%;
   max-height: 140px;
@@ -965,7 +965,7 @@ body {
 }
 
 .team-section-desktop {
-  padding-top: 220px;
+  padding-top: 250px;
   padding-bottom: 30px;
 }
 
