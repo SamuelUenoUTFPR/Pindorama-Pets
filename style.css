@@ -450,6 +450,14 @@ nav {
   opacity: 0.8;
 }
 
+body {
+  background-color: #e2f5fa;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
 .sobre-nos {
   display: flex;
   flex-flow: column wrap;
@@ -463,18 +471,18 @@ nav {
   justify-content: center;
   gap: 80px;
   height: 300px;
-  width: 100%;
+  width: 100vw;
 }
 .quem-somos::before {
   content: "";
   position: absolute;
-  inset: 0; /* ocupa toda a área do .quem-somos */
+  inset: 0; 
   background-image: url("img/icones.jpg");
-  background-repeat: repeat; /* repete o padrão */
-  background-size: 1182px 247.75px; /* ajuste conforme o efeito desejado */
+  background-repeat: repeat; 
+  background-size: 1182px 247.75px; 
   background-position: -235% -40%;
-  opacity: 0.05; /* controla o quão sutil será o padrão */
-  pointer-events: none; /* não atrapalha cliques no conteúdo */
+  opacity: 0.05; 
+  pointer-events: none; 
 }
 
 .quem-somos h3 {
@@ -532,13 +540,12 @@ nav {
 .nossos-servicos::before {
   content: "";
   position: absolute;
-  inset: 0; /* ocupa toda a área do .quem-somos */
+  inset: 0; 
   background-image: url("img/icones.jpg");
-  background-repeat: repeat; /* repete o padrão */
-  background-size: 1182px 247.75px; /* ajuste conforme o efeito desejado */
-  background-position: left top;
-  opacity: 0.05; /* controla o quão sutil será o padrão */
-  pointer-events: none; /* não atrapalha cliques no conteúdo */
+  background-repeat: repeat; 
+  background-size: 1182px 247.75px; 
+  opacity: 0.05; 
+  pointer-events: none; 
 }
 
 .nossos-servicos h3 {
@@ -622,13 +629,342 @@ nav {
 .cuidados::before {
   content: "";
   position: absolute;
-  inset: 0; /* ocupa toda a área do .quem-somos */
+  inset: 0; 
   background-image: url("img/icones.jpg");
-  background-repeat: repeat; /* repete o padrão */
-  background-size: 1182px 247.75px; /* ajuste conforme o efeito desejado */
+  background-repeat: repeat;
+  background-size: 1182px 247.75px;
   background-position: -110% -255%;
-  opacity: 0.05; /* controla o quão sutil será o padrão */
-  pointer-events: none; /* não atrapalha cliques no conteúdo */
+  opacity: 0.05; 
+  pointer-events: none; 
+}
+
+/*-------------------------------------------------------------*/
+
+.terceira {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  width: auto;
+  padding-top: 20px;
+}
+
+.Avaliacoes {
+  display: flex;
+  width: 1180px;
+  height: 626px;
+  flex-direction: column;
+  padding-left: 120px;
+  gap: 20px;
+}
+
+.Avaliacoes h4 {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: clamp(20px, 5vw, 26px);
+  color: #063643;
+}
+
+.comentarios {
+  display: none;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 43px;
+  gap: 15px;
+  padding-bottom: 30px;
+}
+
+.comentarios.visible {
+  display: flex; 
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.coluna h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(20px, 5vw, 20px);
+}
+
+.coluna p {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(18px, 5vw, 18px);
+}
+
+.fotos-de-perfil {
+  padding-top: 10px;
+}
+
+.fotos-de-perfil img {
+  width: 8vw;
+  height: 12vh;
+  border: 1px;
+}
+
+#estrela img {
+  width: 8vw;
+  height: 2.5vh;
+}
+
+#A {
+  display: flex;
+  height: 89px;
+  width: 850px;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.linha img {
+  width: 55vw;
+}
+
+.carrosel {
+  display: flex;
+  flex-direction: row;
+}
+
+#troca1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #063643;
+  border-radius: 8px;
+}
+
+.trocar img {
+  width: 0.9vw;
+  height: 1vh;
+}
+
+.numeracao {
+  display: flex;
+  align-items: center;
+  margin-left: 900px;
+  padding-right: 15px;
+  color: #063643;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 18px);
+  font-family: "Poppins", sans-serif;
+}
+
+#numeracao2 {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #063643;
+  font-weight: 700;
+  font-size: clamp(18px, 5vw, 18px);
+  font-family: "Poppins", sans-serif;
+}
+
+#voltar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #063643;
+  border-radius: 8px;
+  margin-left: 850px;
+}
+
+#voltar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #063643;
+  border-radius: 8px;
+  margin-left: 850px;
+}
+
+/*==============================*/
+
+.entre-em-contato {
+  width: 1020px;
+  height: 745px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entre-em-contato h5 {
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 26px);
+  padding-bottom: 24px;
+  color: #063643;
+  font-family: "Inter", sans-serif;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+}
+
+.localizacao {
+  background-color: #f8f8ff;
+  width: 420px;
+  height: 692px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.localizacao h6 {
+  color: #063643;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(20px, 5vw, 22px);
+  padding: 51px 282px 40px 21px;
+}
+
+.localizacao p {
+  color: #063643;
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(20px, 5vw, 22px);
+  padding-left: 20px;
+  padding-bottom: 70px;
+}
+
+.localizacao img {
+  width: 22vw;
+  height: 30vh;
+  border-radius: 4px;
+  border-color: #0f637a66;
+  border: 1px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 46px;
+}
+
+.whatsapp {
+  padding-bottom: 12px;
+  height: 35px;
+}
+
+.icones-juntos {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.icones-juntos img {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-icon img {
+  position: absolute;
+  z-index: 2;
+  width: 1.3vw;
+  height: 2.5vh;
+  top: 8px;
+  left: 8px;
+}
+
+.Facebook-icon {
+  position: absolute;
+  z-index: 2;
+  width: 1.3vw;
+  height: 2.5vh;
+  top: 6px;
+  left: 6px;
+}
+
+.eclipse img {
+  position: absolute;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+}
+
+.whatsapp p {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+  padding-left: 78px;
+  padding-top: 3px;
+}
+
+.cliente {
+  background-color: #fafdff;
+  width: 600px;
+  height: 692px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.nome {
+  padding-top: 51px;
+}
+
+.cliente h3 {
+  font-size: clamp(20px, 5vw, 22px);
+  color: #063643;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.caixa-de-texto {
+  width: 520px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #00000066;
+}
+
+.caixa-de-texto2 {
+  width: 520px;
+  height: 120px;
+  border-radius: 8px;
+  border: 1px solid #00000066;
+}
+
+.sobrenome {
+  padding-top: 28px;
+}
+
+.enviar p {
+  max-width: 144px;
+  height: 55px;
+  background-color: #0f637a;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: clamp(20px, 5vw, 22px);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
+.enviar :hover {
+  background-color: #063643;
+  color: white;
+  cursor: pointer;
+}
+
+.avaliacoes-mobile {
+  display: none;
+}
+
+.formulario-mobile {
+  display: none;
 }
 
 .team-section-desktop {
@@ -822,9 +1158,9 @@ nav {
   .quem-somos-texto-mobile::before {
     content: "";
     position: absolute;
-    inset: 0; 
+    inset: 0;
     background-image: url("img/fundo-animais-icons 3.png");
-    pointer-events: none; 
+    pointer-events: none;
   }
 
   .quem-somos-texto-mobile h3 {
@@ -870,7 +1206,7 @@ nav {
     background-color: #63b3c9;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100vw;
     min-height: 330px;
     position: relative;
   }
@@ -878,9 +1214,9 @@ nav {
   .nossos-servicos-mobile::before {
     content: "";
     position: absolute;
-    inset: 0; 
+    inset: 0;
     background-image: url("img/fundo-animais-icons 3.png");
-    pointer-events: none; 
+    pointer-events: none;
   }
 
   .nossos-servicos-mobile h3 {
@@ -931,8 +1267,173 @@ nav {
 
   .nossos-servicos-mobile img {
     position: relative;
-     margin-left: 45%;
-     
+    margin-left: 45%;
+  }
+
+  /*-----------------------------------*/
+
+  .terceira {
+    display: none;
+  }
+
+  .entre-em-contato {
+    display: none;
+  }
+
+  .avaliacoes-mobile {
+    display: block;
+    min-height: 454px;
+    width: auto;
+    justify-content: center;
+  }
+
+  .avaliacoes-mobile h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #063643;
+    font-size: clamp(20px, 5vw, 22px);
+  }
+
+  .comentarios-mobile {
+    width: 353px;
+    height: 340px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .comentarios-mobile.visible {
+    display: flex; 
+  }
+
+  .fotos-de-perfil-mobile img {
+    width: 15vw;
+    height: 10vh;
+  }
+
+  .coluna img {
+    width: 25vw;
+    height: 2.5vh;
+  }
+
+  .coluna h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: clamp(13px, 5vw, 15px);
+  }
+
+  .coluna p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: clamp(11px, 5vw, 12px);
+  }
+
+  .carrosel {
+    padding-top: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    padding-left: 85px;
+  }
+
+  .carrosel p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 19px);
+  }
+  .carrosel img {
+    width: 10vw;
+    height: 6vh;
+  }
+
+  .carrosel2 {
+    padding-top: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+  }
+
+  .carrosel2 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 19px);
+  }
+  .carrosel2 img {
+    width: 10vw;
+    height: 6vh;
+  }
+
+  .carrosel3 {
+    padding-top: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    padding-right: 85px;
+    display: flex;
+  }
+
+  .carrosel3 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 19px);
+  }
+  .carrosel3 img {
+    width: 10vw;
+    height: 6vh;
+  }
+
+  .formulario-mobile {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #063643;
+    background-color: #fafdff;
+    width: 393px;
+    height: 529px;
+    display: flex;
+    padding-top: 19px;
+
+    flex-direction: column;
+  }
+
+  .formulario-mobile h2 {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(24px, 5vw, 25px);
+  }
+
+  .formulario-mobile h4 {
+    padding-top: 18px;
+    padding-left: 26px;
+    padding-bottom: 5px;
+    font-size: clamp(13px, 5vw, 14px);
+  }
+  .label-mobile {
+    width: auto;
+    max-width: 340px;
+    height: 39px;
+    border-radius: 8px;
+    border: 1px solid #00000066;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+
+  .label-mensagem-mobile{
+    width: auto;
+    max-width: 340px;
+    height: 78px;
+    border-radius: 8px;
+    border: 1px solid #00000066;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+
+  #enviar{
+    margin-left: 122px;
+    margin-right: 122px;
   }
 
   .desktop-view {
