@@ -392,8 +392,8 @@ body {
 }
 
 .localizacao img {
-  width: 18vw;
-  height: 23vh;
+  width: 22vw;
+  height: 30vh;
   border-radius: 4px;
   border-color: #0f637a66;
   border: 1px;
@@ -423,8 +423,8 @@ body {
   z-index: 2;
   width: 1.3vw;
   height: 2.5vh;
-  top: 6px;
-  left: 6px;
+  top: 8px;
+  left: 8px;
 }
 
 .Facebook-icon {
@@ -513,6 +513,10 @@ body {
 }
 
 .avaliacoes-mobile {
+  display: none;
+}
+
+.formulario-mobile {
   display: none;
 }
 
@@ -696,33 +700,32 @@ body {
   }
 
   .comentarios-mobile.visible {
-  display: flex; /* Torna a avaliação visível */
-}
+    display: flex; /* Torna a avaliação visível */
+  }
 
   .fotos-de-perfil-mobile img {
     width: 15vw;
     height: 10vh;
   }
 
-
-  .coluna img{
+  .coluna img {
     width: 25vw;
     height: 2.5vh;
   }
 
-  .coluna h5{
+  .coluna h5 {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: clamp(13px,5vw,15px);
+    font-size: clamp(13px, 5vw, 15px);
   }
 
-  .coluna p{
+  .coluna p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: clamp(11px,5vw,12px);
+    font-size: clamp(11px, 5vw, 12px);
   }
 
-  .carrosel{
+  .carrosel {
     padding-top: 46px;
     align-items: center;
     justify-content: center;
@@ -730,19 +733,17 @@ body {
     padding-left: 85px;
   }
 
-  .carrosel p{
-    
+  .carrosel p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: clamp(18px, 5vw, 19px);
   }
-  .carrosel img{
+  .carrosel img {
     width: 10vw;
     height: 6vh;
-    
   }
 
-  .carrosel2{
+  .carrosel2 {
     padding-top: 46px;
     align-items: center;
     justify-content: center;
@@ -752,19 +753,17 @@ body {
     /* flex-direction: column; */
   }
 
-  .carrosel2 p{
-    
+  .carrosel2 p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: clamp(18px, 5vw, 19px);
   }
-  .carrosel2 img{
+  .carrosel2 img {
     width: 10vw;
     height: 6vh;
-    
   }
 
-  .carrosel3{
+  .carrosel3 {
     padding-top: 46px;
     align-items: center;
     justify-content: center;
@@ -773,16 +772,64 @@ body {
     display: flex;
   }
 
-  .carrosel3 p{
-    
+  .carrosel3 p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: clamp(18px, 5vw, 19px);
   }
-  .carrosel3 img{
+  .carrosel3 img {
     width: 10vw;
     height: 6vh;
-    
   }
 
+  .formulario-mobile {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #063643;
+    background-color: #fafdff;
+    width: 393px;
+    height: 529px;
+    display: flex;
+    padding-top: 19px;
+
+    flex-direction: column;
+  }
+
+  .formulario-mobile h2 {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(24px, 5vw, 25px);
+  }
+
+  .formulario-mobile h4 {
+    padding-top: 18px;
+    padding-left: 26px;
+    padding-bottom: 5px;
+    font-size: clamp(13px, 5vw, 14px);
+  }
+  .label-mobile {
+    width: auto;
+    max-width: 340px;
+    height: 39px;
+    border-radius: 8px;
+    border: 1px solid #00000066;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+
+  .label-mensagem-mobile{
+    width: auto;
+    max-width: 340px;
+    height: 78px;
+    border-radius: 8px;
+    border: 1px solid #00000066;
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+
+  #enviar{
+    margin-left: 122px;
+    margin-right: 122px;
+  }
 }
