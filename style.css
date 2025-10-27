@@ -28,13 +28,13 @@ body {
 .quem-somos::before {
   content: "";
   position: absolute;
-  inset: 0; /* ocupa toda a área do .quem-somos */
+  inset: 0; 
   background-image: url("img/icones.jpg");
-  background-repeat: repeat; /* repete o padrão */
-  background-size: 1182px 247.75px; /* ajuste conforme o efeito desejado */
+  background-repeat: repeat; 
+  background-size: 1182px 247.75px; 
   background-position: -235% -40%;
-  opacity: 0.05; /* controla o quão sutil será o padrão */
-  pointer-events: none; /* não atrapalha cliques no conteúdo */
+  opacity: 0.05; 
+  pointer-events: none; 
 }
 
 .quem-somos h3 {
@@ -92,13 +92,12 @@ body {
 .nossos-servicos::before {
   content: "";
   position: absolute;
-  inset: 0; /* ocupa toda a área do .quem-somos */
+  inset: 0; 
   background-image: url("img/icones.jpg");
-  background-repeat: repeat; /* repete o padrão */
-  background-size: 1182px 247.75px; /* ajuste conforme o efeito desejado */
-  background-position: left top;
-  opacity: 0.05; /* controla o quão sutil será o padrão */
-  pointer-events: none; /* não atrapalha cliques no conteúdo */
+  background-repeat: repeat; 
+  background-size: 1182px 247.75px; 
+  opacity: 0.05; 
+  pointer-events: none; 
 }
 
 .nossos-servicos h3 {
@@ -182,13 +181,13 @@ body {
 .cuidados::before {
   content: "";
   position: absolute;
-  inset: 0; /* ocupa toda a área do .quem-somos */
+  inset: 0; 
   background-image: url("img/icones.jpg");
-  background-repeat: repeat; /* repete o padrão */
-  background-size: 1182px 247.75px; /* ajuste conforme o efeito desejado */
+  background-repeat: repeat;
+  background-size: 1182px 247.75px;
   background-position: -110% -255%;
-  opacity: 0.05; /* controla o quão sutil será o padrão */
-  pointer-events: none; /* não atrapalha cliques no conteúdo */
+  opacity: 0.05; 
+  pointer-events: none; 
 }
 
 /*-------------------------------------------------------------*/
@@ -230,7 +229,7 @@ body {
 }
 
 .comentarios.visible {
-  display: flex; /* Torna a avaliação visível */
+  display: flex; 
 }
 
 .coluna {
@@ -700,7 +699,7 @@ body {
   }
 
   .comentarios-mobile.visible {
-    display: flex; /* Torna a avaliação visível */
+    display: flex; 
   }
 
   .fotos-de-perfil-mobile img {
@@ -748,9 +747,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    /* padding-left: 85px; */
     display: flex;
-    /* flex-direction: column; */
   }
 
   .carrosel2 p {
