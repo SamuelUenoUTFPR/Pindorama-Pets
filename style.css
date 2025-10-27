@@ -1,13 +1,20 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+  display: block;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #e0f5f8
+  background-color: #E2F5FA;
 }
 
 .header {
@@ -22,10 +29,19 @@ nav {
   position: fixed;
   left: 58%;
   top: 1.5%;
+  padding-top: 35px;
+  max-height: 140px;
+}
+
+nav {
+  position: absolute;
+  left: 57%;
+  top: 2%;
 }
 
 .container {
   max-width: 1130px;
+  max-height: 140px;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -167,7 +183,7 @@ nav {
 
 .carousel-track {
   display: flex;
-  width: 300%; /* Para 3 slides */
+  width: 301%; /* Para 3 slides */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -408,9 +424,11 @@ nav {
 
 /* Indicadores (fora do banner) */
 .carousel-indicators {
+  position: relative;
   display: flex;
+  top: 172px;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .indicator {
@@ -613,8 +631,164 @@ nav {
   pointer-events: none; /* não atrapalha cliques no conteúdo */
 }
 
-@media (max-width: 768px) {
+.team-section-desktop {
+  padding-top: 220px;
+  padding-bottom: 30px;
+}
 
+/* O card branco que envolve o conteúdo */
+.team-card-desktop {
+  max-width: 1130px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 90%; /* Garante espaçamento nas bordas */
+}
+
+.team-section-desktop h3 {
+  font-size: 24px; 
+  color: #063643;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  /* Título alinhado à esquerda, como na imagem */
+  text-align: left; 
+}
+
+.team-grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px; 
+}
+
+/* O card de cada membro */
+.team-member-desktop {
+  /* Remove o shadow e padding do card principal */
+  box-shadow: none; 
+  /* Adiciona a borda cinza e arredondamento */
+  border-radius: 8px;
+  background-color: #fff;
+  /* Garante que a imagem não vaze das bordas arredondadas */
+  overflow: hidden; 
+  text-align: center;
+  /* Remove o efeito hover */
+  transition: none; 
+}
+
+.team-member-desktop:hover {
+  transform: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Adiciona um hover sutil */
+}
+
+.team-member-desktop img {
+  width: 100%;
+  /* Remove o arredondamento da imagem, pois o card já corta */
+  border-radius: 0; 
+  margin-bottom: 0; /* Remove a margem */
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
+}
+
+
+.team-member-desktop p {
+  font-weight: 500;
+  font-size: 18px; /* Um pouco menor */
+  color: #063643;
+  margin: 0 0 5px 0; /* Adiciona margem inferior */
+}
+
+.team-member-desktop span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #063643; 
+}
+
+.footer-desktop {
+  /* Fundo do footer agora é claro */
+  background-color: #F7F9FB; 
+  color: #063643; /* Texto principal é escuro */
+  padding-top: 30px;
+}
+
+.footer-content-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 30px;
+}
+
+/* Ajusta todas as colunas para alinhamento */
+.footer-column-desktop {
+  flex: 1; /* Permite que as colunas se ajustem */
+  min-width: 200px; /* Largura mínima para cada coluna */
+  max-width: 240px;
+}
+
+.footer-logo {
+    height: 200px; /* Ajuste o tamanho do novo logo */
+    margin-top: -35px;
+}
+
+.footer-column-desktop strong {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: #063643; /* Título em cor escura */
+}
+
+.footer-column-desktop ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column-desktop li {
+  margin-bottom: 8px;
+}
+
+.footer-column-desktop a {
+  text-decoration: none;
+  color: #555; /* Cor dos links (cinza escuro) */
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-column-desktop a:hover {
+    color: #0f7288; /* Cor do hover (azul) */
+}
+
+/* Estilos para os ícones de contato */
+.social-icons-desktop {
+    display: flex;
+    gap: 15px; /* Espaço entre os ícones */
+}
+
+.social-icons-desktop img {
+    height: 36px; /* Tamanho dos ícones sociais */
+    transition: opacity 0.3s ease;
+}
+
+.social-icons-desktop img:hover {
+    opacity: 0.7;
+}
+
+/* Barra de copyright */
+.footer-bar-desktop {
+  margin-top: 60px;
+  background-color: #063643; /* Fundo escuro */
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: bold;
+  color: #E2F5FA; /* Texto branco */
+}
+
+@media (max-width: 768px) {
 
   .cuidados {
     display: none;
@@ -759,5 +933,230 @@ nav {
     position: relative;
      margin-left: 45%;
      
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+
+  :root {
+    --mobile-bg-teal: #6BB7CB;
+    --mobile-text-dark: #063643;
+    --mobile-text-light: #F8F8FF;
+  }
+
+  .mobile-view {
+    font-family: "Poppins", sans-serif;
+    background-color: #E2F5FA;
+    overflow-x: hidden; /* Evita scroll horizontal */
+  }
+
+  /* Classe utilitária para seções com fundo azulado */
+  .bg-teal {
+    background-color: var(--mobile-bg-teal);
+    color: var(--mobile-text-dark);
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .mobile-view h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .mobile-view p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* --- Header Mobile --- */
+  .mobile-header {
+    margin-top: 40px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center; /* Centraliza o logo */
+    align-items: center;
+    padding: 15px 20px;
+    background: #F8F8FF;
+    position: relative; /* Para o menu hamburger */
+    border-bottom: 1px solid #eee;
+    height: 80px;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .mobile-logo {
+    height: 45px; 
+  }
+
+  /* --- Hero Mobile --- */
+  .mobile-hero {
+    background: #fff;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #E2F5FA;
+  }
+
+  .mobile-hero .hero-content{
+    position: static; 
+    z-index: 1;
+    text-align: center;
+    width: 100%; 
+    max-width: 380px; 
+    padding-bottom: 0;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-hero h2 {
+    font-size: 24px;
+    color: var(--mobile-text-dark);
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    left: -20%;
+    top: -20px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+  }
+
+  .mobile-hero .hero-pets-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    top: -95px;
+    margin-bottom: -160px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-ellipse {
+    top: -156px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .mobile-hero img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  
+  .btn-mobile {
+    display: inline-block;
+    background: #0F637A;
+    color: var(--mobile-text-light);  
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: -48%;
+    z-index: 2;
+  }
+
+  .btn-mobile-white {
+    display: inline-block;
+    background: var(--mobile-text-light);
+    color: var(--mobile-text-dark);
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* --- "Profissionais" --- */
+  .mobile-team {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas */
+    gap: 20px;
+  }
+  .team-member img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  .team-member p {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0;
+  }
+  .team-member span {
+    font-size: 13px;
+    color: #666;
+  }
+
+  /* --- Footer Mobile --- */
+  .mobile-footer {
+    background: #f9f9f9; /* Um cinza bem claro */
+    padding: 30px 20px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  .social-icons img {
+    height: 45px; /* Ajuste o tamanho dos ícones */
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-column strong {
+    font-size: 14px;
+    color: #333;
+  }
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+  .footer-column a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+  }
+  .footer-bar {
+    background: var(--mobile-text-dark);
+    color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 12px;
   }
 }
