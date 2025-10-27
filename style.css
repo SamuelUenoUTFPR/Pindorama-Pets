@@ -411,48 +411,45 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  
 }
 
-.icones-juntos img{
+.icones-juntos img {
   width: 24px;
   height: 24px;
 }
 
-.whatsapp-icon img{
+.whatsapp-icon img {
   position: absolute;
   z-index: 2;
   width: 1.3vw;
   height: 2.5vh;
-  top: 6px; 
+  top: 6px;
   left: 6px;
-  
 }
 
-.Facebook-icon{
+.Facebook-icon {
   position: absolute;
   z-index: 2;
   width: 1.3vw;
   height: 2.5vh;
-  top: 6px; 
+  top: 6px;
   left: 6px;
 }
 
-.eclipse img{
+.eclipse img {
   position: absolute;
   z-index: 1;
   width: 36px;
   height: 36px;
 }
 
-.whatsapp p{
+.whatsapp p {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(18px, 5vw, 20px);
   padding-left: 78px;
   padding-top: 3px;
 }
-
 
 .cliente {
   background-color: #fafdff;
@@ -463,8 +460,8 @@ body {
   padding-left: 40px;
   padding-right: 40px;
 }
-  
-.nome{
+
+.nome {
   padding-top: 51px;
 }
 
@@ -476,28 +473,28 @@ body {
   padding-bottom: 8px;
 }
 
-.caixa-de-texto{
+.caixa-de-texto {
   width: 520px;
   height: 60px;
   border-radius: 8px;
-  border: 1px solid #00000066;  
+  border: 1px solid #00000066;
 }
 
-.caixa-de-texto2{
+.caixa-de-texto2 {
   width: 520px;
   height: 120px;
   border-radius: 8px;
-  border: 1px solid #00000066;  
+  border: 1px solid #00000066;
 }
 
-.sobrenome{
+.sobrenome {
   padding-top: 28px;
 }
 
-.enviar p{
+.enviar p {
   max-width: 144px;
   height: 55px;
-  background-color: #0F637A;
+  background-color: #0f637a;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -509,12 +506,15 @@ body {
   margin-top: 40px;
 }
 
-.enviar :hover{
+.enviar :hover {
   background-color: #063643;
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
+.avaliacoes-mobile {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .cuidados {
@@ -660,4 +660,129 @@ body {
     position: relative;
     margin-left: 45%;
   }
+
+  /*-----------------------------------*/
+
+  .terceira {
+    display: none;
+  }
+
+  .entre-em-contato {
+    display: none;
+  }
+
+  .avaliacoes-mobile {
+    display: block;
+    min-height: 454px;
+    width: auto;
+    justify-content: center;
+  }
+
+  .avaliacoes-mobile h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #063643;
+    font-size: clamp(20px, 5vw, 22px);
+  }
+
+  .comentarios-mobile {
+    width: 353px;
+    height: 340px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .comentarios-mobile.visible {
+  display: flex; /* Torna a avaliação visível */
+}
+
+  .fotos-de-perfil-mobile img {
+    width: 15vw;
+    height: 10vh;
+  }
+
+
+  .coluna img{
+    width: 25vw;
+    height: 2.5vh;
+  }
+
+  .coluna h5{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: clamp(13px,5vw,15px);
+  }
+
+  .coluna p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: clamp(11px,5vw,12px);
+  }
+
+  .carrosel{
+    padding-top: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    padding-left: 85px;
+  }
+
+  .carrosel p{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 19px);
+  }
+  .carrosel img{
+    width: 10vw;
+    height: 6vh;
+    
+  }
+
+  .carrosel2{
+    padding-top: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* padding-left: 85px; */
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .carrosel2 p{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 19px);
+  }
+  .carrosel2 img{
+    width: 10vw;
+    height: 6vh;
+    
+  }
+
+  .carrosel3{
+    padding-top: 46px;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    padding-right: 85px;
+    display: flex;
+  }
+
+  .carrosel3 p{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5vw, 19px);
+  }
+  .carrosel3 img{
+    width: 10vw;
+    height: 6vh;
+    
+  }
+
 }
