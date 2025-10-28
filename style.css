@@ -461,8 +461,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 80px;
+  padding-top: 20px;
   height: 300px;
-  width: 100%;
+  width: 99.2vw;
   top: 200px;
 }
 .quem-somos::before {
@@ -648,7 +649,7 @@ body {
   width: 1180px;
   height: 626px;
   flex-direction: column;
-  padding-left: 120px;
+  padding-left: 400px;
   gap: 20px;
 }
 
@@ -700,21 +701,20 @@ body {
 }
 
 .fotos-de-perfil img {
-  width: 8vw;
-  height: 12vh;
+  width: 81px;
+  height: 80px;
   border: 1px;
 }
 
 #estrela img {
-  width: 8vw;
-  height: 2.5vh;
+  width: 130px;
+  height: 20px;
 }
 
 #A {
   display: flex;
-  height: 89px;
-  width: 850px;
-  justify-content: flex-start;
+  height: 50%;
+  width: 110%;
   gap: 10px;
 }
 
@@ -733,6 +733,7 @@ body {
   align-items: center;
   width: 40px;
   height: 30px;
+  padding: 7px;
   border: 1px solid #063643;
   border-radius: 8px;
 }
@@ -770,6 +771,7 @@ body {
   align-items: center;
   width: 40px;
   height: 30px;
+  padding: 7px;
   border: 1px solid #063643;
   border-radius: 8px;
   margin-left: 850px;
@@ -781,6 +783,7 @@ body {
   align-items: center;
   width: 40px;
   height: 30px;
+  padding: 7px;
   border: 1px solid #063643;
   border-radius: 8px;
   margin-left: 850px;
@@ -795,6 +798,8 @@ body {
   justify-content: center;
   margin-bottom: 48px;
   margin-left: 100px;
+  margin-top: 100px;
+  padding-left: 350px;
   flex-direction: column;
 }
 
@@ -808,8 +813,6 @@ body {
 
 .formulario {
   display: flex;
-  flex-direction: row;
-  box-shadow: 0 2px 10px #063643
 }
 
 .localizacao {
@@ -1310,14 +1313,14 @@ body {
   }
 
   .fotos-de-perfil-mobile img {
-    width: 15vw;
-    height: 10vh;
-    margin-left: 23px;
+    width: 53px;
+    height: 53px;
+    margin-left: 25px;
+    margin-top: 20px;
   }
 
   .coluna img {
     width: 25vw;
-    height: 2.5vh;
   }
 
   .coluna h5 {
@@ -1636,6 +1639,7 @@ body {
   .mobile-footer {
     background: #f9f9f9; /* Um cinza bem claro */
     padding: 30px 20px;
+    width: 100%;
   }
   .social-icons {
     display: flex;
