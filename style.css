@@ -1040,6 +1040,8 @@ body {
   background-color: #F7F9FB; 
   color: #063643; /* Texto principal é escuro */
   padding-top: 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 6px #063643;
 }
 
 .footer-content-desktop {
@@ -1617,6 +1619,7 @@ body {
     justify-content: center;
     gap: 25px;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
   .social-icons img {
     height: 45px; /* Ajuste o tamanho dos ícones */
