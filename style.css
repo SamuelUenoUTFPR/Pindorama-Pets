@@ -794,6 +794,8 @@ body {
   width: 1020px;
   height: 745px;
   display: flex;
+  margin-left: 300px;
+  margin-bottom: 48px;
   flex-direction: column;
 }
 
