@@ -1484,9 +1484,8 @@ body {
 
   .hamburger-menu {
     position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    right: 65%;
     background: none;
     border: none;
     cursor: pointer;
