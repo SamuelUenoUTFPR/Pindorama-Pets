@@ -257,7 +257,6 @@ nav {
   right: 590px;
   width: 35%;
   height: 35%;
-  pointer-events: none; 
 }
 
 .slide-vacinacao .patinha-vacina-2 {
@@ -266,7 +265,6 @@ nav {
   right: 770px;
   width: 35%; 
   height: 35%;
-  pointer-events: none;
 }
 
 .slide-vacinacao .vacina-img {
@@ -275,18 +273,17 @@ nav {
   right: 670px;
   width: 40%; 
   height: 40%;
-  pointer-events: none; 
 }
 
 .slide-vacinacao h3{
-  position: fixed;
-  left: 15%;
+  position: absolute;
+  left: 45%;
   top: 10%;
 }
 
 .slide-vacinacao p {
-  position: fixed;
-  left: 15.3%;
+  position: absolute;
+  left: 45%;
   top: 25%;
 }
 
@@ -294,12 +291,11 @@ nav {
   position: absolute;
   top: 100px;
   right: 100px;
-  pointer-events: none; 
 }
 
 .slide-vacinacao .btn-slide {
-  position: fixed;
-  left: 15.3%;
+  position: absolute;
+  left: 45%;
   top: 55%;
   padding: 10px;
 }
@@ -325,21 +321,21 @@ nav {
 }
 
 .slide-adocao h3{
-  position: fixed;
-  right: 54.2%;
-  top: 8%
+  position: absolute;
+  right: 62%;
+  top: 10%;
 }
 
 .slide-adocao p{
-  position: fixed;
-  right: 47.1%;
-  top: 25%;
+  position: absolute;
+  right: 41%;
+  top: 27%;
 }
 
 .slide-adocao .btn-slide {
-  position: fixed;
-  left: 36.3%;
-  top: 70%;
+  position: absolute;
+  left: 8%;
+  top: 75%;
   padding: 10px;
 }
 
@@ -377,20 +373,20 @@ nav {
 }
 
 .slide-banho h3{
-  position: fixed;
-  right: 11.1%;
+  position: absolute;
+  right: 33.3%;
   top: 11%
 }
 
 .slide-banho p{
-  position: fixed;
-  right: 13.3%;
+  position: absolute;
+  right: 39.7%;
   top: 25%;
 }
 
 .slide-banho .btn-slide {
-  position: fixed;
-  left: 69.6%;
+  position: absolute;
+  left: 8%;
   top: 70%;
   padding: 10px;
 }
@@ -1490,9 +1486,8 @@ body {
 
   .hamburger-menu {
     position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    right: 65%;
     background: none;
     border: none;
     cursor: pointer;
