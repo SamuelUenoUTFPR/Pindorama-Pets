@@ -709,7 +709,7 @@ nav {
 #A {
   display: flex;
   height: 50%;
-  width: 110%;
+  width: 100%;
   gap: 10px;
 }
 
