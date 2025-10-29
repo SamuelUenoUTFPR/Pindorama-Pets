@@ -836,8 +836,8 @@ nav {
 }
 
 .localizacao img {
-  width: 22vw;
-  height: 30vh;
+  max-width: 22vw;
+  max-height: 30vh;
   border-radius: 4px;
   border-color: #0f637a66;
   border: 1px;
