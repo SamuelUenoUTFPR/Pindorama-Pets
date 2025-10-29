@@ -855,15 +855,16 @@ body {
 }
 
 .icones-juntos {
-  position: relative;
+  
   display: flex;
   flex-direction: row;
-  padding-left: 10px;
+  padding-top: 45px;
+  padding-left: 20px;
 }
 
 .icones-juntos img {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 }
 
 .whatsapp-icon img {
@@ -895,7 +896,6 @@ body {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(18px, 5vw, 20px);
-  padding-left: 50px;
   padding-top: 3px;
 }
 
