@@ -457,7 +457,7 @@ nav {
   gap: 80px;
   padding-top: 20px;
   height: 300px;
-  width: 99.2vw;
+  width: 100%;
   top: 200px;
 }
 .quem-somos::before {
@@ -841,20 +841,18 @@ nav {
   border-radius: 4px;
   border-color: #0f637a66;
   border: 1px;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 46px;
 }
 
 .whatsapp {
   padding-bottom: 12px;
-  height: 35px;
+  height: 40px;
 }
 
 .icones-juntos {
   position: relative;
   display: flex;
   flex-direction: row;
+  padding-left: 10px;
 }
 
 .icones-juntos img {
@@ -867,8 +865,8 @@ nav {
   z-index: 2;
   width: 1.3vw;
   height: 2.5vh;
-  top: 8px;
-  left: 8px;
+  top: 9px;
+  left: 18px;
 }
 
 .Facebook-icon {
@@ -876,8 +874,8 @@ nav {
   z-index: 2;
   width: 1.3vw;
   height: 2.5vh;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 18px;
 }
 
 .eclipse img {
@@ -891,7 +889,7 @@ nav {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(18px, 5vw, 20px);
-  padding-left: 78px;
+  padding-left: 50px;
   padding-top: 3px;
 }
 
